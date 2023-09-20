@@ -1,0 +1,3565 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Contact Us Test Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Contact Us Test Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sep 20, 2023 23:48:26</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Test_004</a><a class="dropdown-item" href="#">@OrderValidation</a><a class="dropdown-item" href="#">@Test_013</a><a class="dropdown-item" href="#">@LableValidation</a><a class="dropdown-item" href="#">@Test_011</a><a class="dropdown-item" href="#">@Test_010</a><a class="dropdown-item" href="#">@LastNameValidation</a><a class="dropdown-item" href="#">@Test_009</a><a class="dropdown-item" href="#">@ResetButtonValidation</a><a class="dropdown-item" href="#">@Test_012</a><a class="dropdown-item" href="#">@FisrtNameValidation</a><a class="dropdown-item" href="#">@CommentsFieldValidation</a><a class="dropdown-item" href="#">@Test_014</a><a class="dropdown-item" href="#">@RT</a><a class="dropdown-item" href="#">@Test_006</a><a class="dropdown-item" href="#">@Test_008</a><a class="dropdown-item" href="#">@EmailValidation</a><a class="dropdown-item" href="#">@Test_005</a><a class="dropdown-item" href="#">@Test_001</a><a class="dropdown-item" href="#">@Test_002</a><a class="dropdown-item" href="#">@Test_007</a><a class="dropdown-item" href="#">@Test_003</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">User Registration</p>
+            <p class="text-sm">
+              <span>11:48:26 pm</span> / <span>00:01:56:479</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">User Registration</h5>
+<span class='badge badge-success'>09.20.2023 11:48:26 pm</span>
+<span class='badge badge-danger'>09.20.2023 11:50:23 pm</span>
+<span class='badge badge-default'>00:01:56:479</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User successfully submits the form with valid input</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepdefinition.ContactFromSteps.i_open_the_Contact_Us_page()">
+                <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.ContactFromSteps.the_user_enters_the_following_information(io.cucumber.datatable.DataTable)">
+                <span>When the user enters the following information:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Doe</td><td>johndoe@example.com</td><td>Positive flow</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.ContactFromSteps.clicks_the_submit_button()">
+                <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.ContactFromSteps.the_user_sees_thank_you_page()">
+                <span>Then the user sees a thank you page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>User successfully submits the form with all possible valid values for first name</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>User successfully submits the form with all possible valid values for first name</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>Jo</td><td>Doe</td><td>johndoe@example.com</td><td>eaxctly with 2 char</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user sees a thank you page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>User successfully submits the form with all possible valid values for first name</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>Johnsmith</td><td>Doe</td><td>johndoe@example.com</td><td>more than 2 char</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user sees a thank you page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>User successfully submits the form with all possible valid values for first name</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>JohnABCDEFGHIJKLMNOPQRSTUVWXYZ</td><td>Doe</td><td>johndoe@example.com</td><td>exactly 25 char</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user sees a thank you page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="31"><span class="badge log fail-bg mr-2">Fail</span>Submitting the form with a blank first name</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="32"><span class="badge log pass-bg mr-2">Pass</span>Submitting the form with a blank first name</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with blank first name</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td></td><td>Doe</td><td>johndoe@example.com</td><td>This is a test</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see an error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="39"><span class="badge log fail-bg mr-2">Fail</span>Submitting the form with a blank first name</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with blank first name</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>!-empty space-!</td><td>Doe</td><td>johndoe@example.com</td><td>This is a test</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then the user should see an error message</span>
+      <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[Error: all fields are required]> but was:<[Thank You for your Message!]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.stepdefinition.ContactFromSteps.userShouldSeeErrorMessage(ContactFromSteps.java:144)
+	at ✽.the user should see an error message(file:///F:/WorkSpaceSelinium/financial/src/test/resources/Features/ContactForm.feature:35)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.hooks.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
+      <div>30e9eecb-ef6c-4f0d-91e3-c401176e850a
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="46"><span class="badge log fail-bg mr-2">Fail</span>Submitting the form with a invalid first name</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="47"><span class="badge log fail-bg mr-2">Fail</span>Submitting the form with a invalid first name</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>J</td><td>Doe</td><td>johndoe@example.com</td><td>less that 2 character</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then the user should see an error message</span>
+      <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[Error: all fields are required]> but was:<[Thank You for your Message!]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.stepdefinition.ContactFromSteps.userShouldSeeErrorMessage(ContactFromSteps.java:144)
+	at ✽.the user should see an error message(file:///F:/WorkSpaceSelinium/financial/src/test/resources/Features/ContactForm.feature:48)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.hooks.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
+      <div>f2dd31ed-c2e2-45f6-bff6-06997f4cd154
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded2.png' src="../embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="54"><span class="badge log fail-bg mr-2">Fail</span>Submitting the form with a invalid first name</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>JohnABCDEFGHIJKLMNOPQRSTUVWXY</td><td>Doe</td><td>johndoe@example.com</td><td>more than 25 characters</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then the user should see an error message</span>
+      <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[Error: all fields are required]> but was:<[Thank You for your Message!]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.stepdefinition.ContactFromSteps.userShouldSeeErrorMessage(ContactFromSteps.java:144)
+	at ✽.the user should see an error message(file:///F:/WorkSpaceSelinium/financial/src/test/resources/Features/ContactForm.feature:48)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.hooks.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
+      <div>670a7a90-8f53-4aba-aa9d-6c69af5541dc
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded3.png' src="../embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="61"><span class="badge log pass-bg mr-2">Pass</span>User successfully submits the form with all possible valid values for last name</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="62"><span class="badge log pass-bg mr-2">Pass</span>User successfully submits the form with all possible valid values for last name</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Jo</td><td>johndoe@example.com</td><td>eaxctly with 2 char</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user sees a thank you page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="69"><span class="badge log pass-bg mr-2">Pass</span>User successfully submits the form with all possible valid values for last name</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Johnsmith</td><td>johndoe@example.com</td><td>more than 2 char</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user sees a thank you page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="76"><span class="badge log pass-bg mr-2">Pass</span>User successfully submits the form with all possible valid values for last name</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>JohnABCDEFGHIJKLMNOPQRSTUVWXYZ</td><td>johndoe@example.com</td><td>exactly 25 char</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user sees a thank you page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="83"><span class="badge log fail-bg mr-2">Fail</span>Submitting the form with a blank Last name</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="84"><span class="badge log pass-bg mr-2">Pass</span>Submitting the form with a blank Last name</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with blank last name</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>Doe</td><td></td><td>johndoe@example.com</td><td>This is a test</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see an error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="91"><span class="badge log fail-bg mr-2">Fail</span>Submitting the form with a blank Last name</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with blank last name</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>Doe</td><td>!-empty space-!</td><td>johndoe@example.com</td><td>This is a test</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then the user should see an error message</span>
+      <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[Error: all fields are required]> but was:<[Thank You for your Message!]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.stepdefinition.ContactFromSteps.userShouldSeeErrorMessage(ContactFromSteps.java:144)
+	at ✽.the user should see an error message(file:///F:/WorkSpaceSelinium/financial/src/test/resources/Features/ContactForm.feature:76)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.hooks.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
+      <div>ae158a0e-b845-45df-9218-42caa874cbc3
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded4.png' src="../embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="98"><span class="badge log fail-bg mr-2">Fail</span>Submitting the form with invalid last name</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="99"><span class="badge log fail-bg mr-2">Fail</span>Submitting the form with invalid last name</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>J</td><td>Do</td><td>johndoe@example.com</td><td>This is a test</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then the user should see an error message</span>
+      <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[Error: all fields are required]> but was:<[Thank You for your Message!]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.stepdefinition.ContactFromSteps.userShouldSeeErrorMessage(ContactFromSteps.java:144)
+	at ✽.the user should see an error message(file:///F:/WorkSpaceSelinium/financial/src/test/resources/Features/ContactForm.feature:89)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.hooks.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
+      <div>12680520-3565-4406-b05d-836704ead884
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded5.png' src="../embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="106"><span class="badge log fail-bg mr-2">Fail</span>Submitting the form with invalid last name</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>JohnABCDEFGHIJKLMNOPQRSTUVWXY</td><td>johndoe@example.com</td><td>This is a test</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then the user should see an error message</span>
+      <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[Error: all fields are required]> but was:<[Thank You for your Message!]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.stepdefinition.ContactFromSteps.userShouldSeeErrorMessage(ContactFromSteps.java:144)
+	at ✽.the user should see an error message(file:///F:/WorkSpaceSelinium/financial/src/test/resources/Features/ContactForm.feature:89)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.hooks.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
+      <div>7a461515-224f-4913-9025-3ffdfdb5f5cb
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded6.png' src="../embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="113"><span class="badge log pass-bg mr-2">Pass</span>User successfully submits the form with all possible valid values for email</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="114"><span class="badge log pass-bg mr-2">Pass</span>User successfully submits the form with all possible valid values for email</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Doe</td><td>john.deo@example.com</td><td>valid email</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user sees a thank you page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="121"><span class="badge log pass-bg mr-2">Pass</span>User successfully submits the form with all possible valid values for email</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Doe</td><td>john_deo@example.com</td><td>valid email</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user sees a thank you page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="128"><span class="badge log pass-bg mr-2">Pass</span>User successfully submits the form with all possible valid values for email</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Doe</td><td>john.deo1@example.com</td><td>valid email</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user sees a thank you page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="135"><span class="badge log pass-bg mr-2">Pass</span>User successfully submits the form with all possible valid values for email</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Doe</td><td>johndeo@example-ca.com</td><td>valid email</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user sees a thank you page</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="142"><span class="badge log fail-bg mr-2">Fail</span>Submitting the form with a blank email id</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="143"><span class="badge log pass-bg mr-2">Pass</span>Submitting the form with a blank email id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with blank email</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>Doe</td><td>Dolly</td><td></td><td>This is a test</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see all fields required and invalid email error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="150"><span class="badge log fail-bg mr-2">Fail</span>Submitting the form with a blank email id</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with blank email</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>Doe</td><td>Dolly</td><td>!-empty space-!</td><td>This is a test</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then the user should see all fields required and invalid email error message</span>
+      <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<Error: [all fields are required
+Error: ]Invalid email addres...> but was:<Error: []Invalid email addres...>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.stepdefinition.ContactFromSteps.userShouldSeeAllFieldsAndInvalidEmailErrorMessage(ContactFromSteps.java:160)
+	at ✽.the user should see all fields required and invalid email error message(file:///F:/WorkSpaceSelinium/financial/src/test/resources/Features/ContactForm.feature:118)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.hooks.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
+      <div>d0e15ff1-0ae0-4f3c-aade-f61ad8751c0b
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded7.png' src="../embedded7.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="157"><span class="badge log pass-bg mr-2">Pass</span>Submitting the form with a invalid email id</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="158"><span class="badge log pass-bg mr-2">Pass</span>Submitting the form with a invalid email id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with invalid email:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Doe</td><td>johndoe</td><td>No domain name</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see invalid email error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="165"><span class="badge log pass-bg mr-2">Pass</span>Submitting the form with a invalid email id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with invalid email:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Doe</td><td>johndoeexample.com</td><td>No @ symbol</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see invalid email error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="172"><span class="badge log pass-bg mr-2">Pass</span>Submitting the form with a invalid email id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with invalid email:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Doe</td><td>johndoe@example</td><td>No TLD</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see invalid email error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="179"><span class="badge log pass-bg mr-2">Pass</span>Submitting the form with a invalid email id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with invalid email:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Doe</td><td>johndoe!@example.com</td><td>part name with !</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see invalid email error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="186"><span class="badge log pass-bg mr-2">Pass</span>Submitting the form with a invalid email id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with invalid email:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Doe</td><td>johndoe@@example.com</td><td>2 @ symbol</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see invalid email error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="193"><span class="badge log pass-bg mr-2">Pass</span>Submitting the form with a invalid email id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with invalid email:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Doe</td><td>johndoe@example.co!m</td><td>Invalid TLD</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see invalid email error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="200"><span class="badge log pass-bg mr-2">Pass</span>Submitting the form with a invalid email id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with invalid email:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Doe</td><td>johndoe@example.</td><td>Invalid TLD</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see invalid email error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="207"><span class="badge log pass-bg mr-2">Pass</span>Submitting the form with a invalid email id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with invalid email:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Doe</td><td>johndoe@example.c</td><td>Invalid TLD</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see invalid email error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="214"><span class="badge log pass-bg mr-2">Pass</span>Submitting the form with a invalid email id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with invalid email:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Doe</td><td>johndoe@example.comm</td><td>Invalid TLD</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see invalid email error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="221"><span class="badge log fail-bg mr-2">Fail</span>Submitting the form with a blank comments</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="222"><span class="badge log pass-bg mr-2">Pass</span>Submitting the form with a blank comments</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with blank message:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Smith</td><td>johndoe@example.com</td><td></td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user should see an error message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="229"><span class="badge log fail-bg mr-2">Fail</span>Submitting the form with a blank comments</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user enters the following information with blank message:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Smith</td><td>johndoe@example.com</td><td>!-empty space-!</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And clicks the "Submit" button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then the user should see an error message</span>
+      <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[Error: all fields are required]> but was:<[Thank You for your Message!]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.stepdefinition.ContactFromSteps.userShouldSeeErrorMessage(ContactFromSteps.java:144)
+	at ✽.the user should see an error message(file:///F:/WorkSpaceSelinium/financial/src/test/resources/Features/ContactForm.feature:152)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.hooks.Hooks.afterScenario(io.cucumber.java.Scenario)</span>
+      <div>13334b20-5a44-4468-a833-ef2d1498eb26
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded8.png' src="../embedded8.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="236"><span class="badge log pass-bg mr-2">Pass</span>User resets the form after filling all the fields</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepdefinition.ContactFromSteps.i_open_the_Contact_Us_page()">
+                <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.ContactFromSteps.the_user_enters_the_following_information(io.cucumber.datatable.DataTable)">
+                <span>When the user enters the following information:</span>
+      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Email</td><td>Message</td></tr><tr><td>John</td><td>Doe</td><td>johndoe@example.com</td><td>Positive flow</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.ContactFromSteps.clicks_the_reset_button()">
+                <span>And clicks the "Reset" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.ContactFromSteps.the_fields_in_the_form_are_reset()">
+                <span>Then the fields in the form are reset</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="243"><span class="badge log pass-bg mr-2">Pass</span>Verify the order of web elements</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepdefinition.ContactFromSteps.i_open_the_Contact_Us_page()">
+                <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.ContactFromSteps.user_validates_the_order_of_webelements()">
+                <span>Then user validates the order of webelements</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="248"><span class="badge log pass-bg mr-2">Pass</span>Verify the lable or place holder of web elements</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.stepdefinition.ContactFromSteps.i_open_the_Contact_Us_page()">
+                <span>Given I open the Contact Us page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.stepdefinition.ContactFromSteps.user_validates_the_lable_of_webelements()">
+                <span>Then user validates the lable of webelements</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>8</span>
+</span>
+<p class="name">org.junit.ComparisonFailure</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.junit.ComparisonFailure</h4>
+<span status="fail" class='badge log badge-danger'>8 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:48:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='44'>Then the user should see an error message</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank first name.Then the user should see an error message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:48:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='52'>Then the user should see an error message</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid first name.Then the user should see an error message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:48:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='59'>Then the user should see an error message</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid first name.Then the user should see an error message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:49:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='96'>Then the user should see an error message</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank Last name.Then the user should see an error message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:49:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='104'>Then the user should see an error message</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with invalid last name.Then the user should see an error message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:49:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='111'>Then the user should see an error message</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with invalid last name.Then the user should see an error message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:49:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='155'>Then the user should see all fields required and invalid email error message</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank email id.Then the user should see all fields required and invalid email error message</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:50:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='234'>Then the user should see an error message</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank comments.Then the user should see an error message</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">22</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@Test_004</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test_004</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:48:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='47'>Submitting the form with a invalid first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:48:55 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='54'>Submitting the form with a invalid first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid first name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@OrderValidation</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@OrderValidation</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='243'>Verify the order of web elements</a>
+<div class="">
+<span class="badge badge-default">User Registration.Verify the order of web elements</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Test_013</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test_013</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='243'>Verify the order of web elements</a>
+<div class="">
+<span class="badge badge-default">User Registration.Verify the order of web elements</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@LableValidation</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@LableValidation</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='248'>Verify the lable or place holder of web elements</a>
+<div class="">
+<span class="badge badge-default">User Registration.Verify the lable or place holder of web elements</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Test_011</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test_011</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='222'>Submitting the form with a blank comments</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank comments</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:50:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='229'>Submitting the form with a blank comments</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank comments</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>9</span>
+</span>
+<p class="name">@Test_010</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test_010</h4>
+<span status="pass" class='badge log pass-bg'>9 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='158'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='165'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='172'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='179'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='186'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='193'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='200'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='207'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='214'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">@LastNameValidation</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@LastNameValidation</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='62'>User successfully submits the form with all possible valid values for last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='69'>User successfully submits the form with all possible valid values for last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='76'>User successfully submits the form with all possible valid values for last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='84'>Submitting the form with a blank Last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank Last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:49:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='91'>Submitting the form with a blank Last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank Last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:49:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='99'>Submitting the form with invalid last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with invalid last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:49:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='106'>Submitting the form with invalid last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with invalid last name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Test_009</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test_009</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='143'>Submitting the form with a blank email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:49:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='150'>Submitting the form with a blank email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank email id</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@ResetButtonValidation</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ResetButtonValidation</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='236'>User resets the form after filling all the fields</a>
+<div class="">
+<span class="badge badge-default">User Registration.User resets the form after filling all the fields</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Test_012</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test_012</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='236'>User resets the form after filling all the fields</a>
+<div class="">
+<span class="badge badge-default">User Registration.User resets the form after filling all the fields</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">@FisrtNameValidation</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@FisrtNameValidation</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>User successfully submits the form with all possible valid values for first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>User successfully submits the form with all possible valid values for first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>User successfully submits the form with all possible valid values for first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>Submitting the form with a blank first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:48:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>Submitting the form with a blank first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:48:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='47'>Submitting the form with a invalid first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:48:55 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='54'>Submitting the form with a invalid first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid first name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@CommentsFieldValidation</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CommentsFieldValidation</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='222'>Submitting the form with a blank comments</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank comments</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:50:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='229'>Submitting the form with a blank comments</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank comments</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Test_014</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test_014</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='248'>Verify the lable or place holder of web elements</a>
+<div class="">
+<span class="badge badge-default">User Registration.Verify the lable or place holder of web elements</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>27</span>
+<span class='badge log badge-danger'>8</span>
+</span>
+<p class="name">@RT</p>
+<p class="duration text-sm">35 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@RT</h4>
+<span status="pass" class='badge log pass-bg'>27 passed</span>
+<span status="fail" class='badge log badge-danger'>8 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User successfully submits the form with valid input</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with valid input</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>User successfully submits the form with all possible valid values for first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>User successfully submits the form with all possible valid values for first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>User successfully submits the form with all possible valid values for first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>Submitting the form with a blank first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:48:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>Submitting the form with a blank first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:48:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='47'>Submitting the form with a invalid first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:48:55 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='54'>Submitting the form with a invalid first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='62'>User successfully submits the form with all possible valid values for last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='69'>User successfully submits the form with all possible valid values for last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='76'>User successfully submits the form with all possible valid values for last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='84'>Submitting the form with a blank Last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank Last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:49:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='91'>Submitting the form with a blank Last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank Last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:49:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='99'>Submitting the form with invalid last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with invalid last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:49:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='106'>Submitting the form with invalid last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with invalid last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='114'>User successfully submits the form with all possible valid values for email</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for email</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='121'>User successfully submits the form with all possible valid values for email</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for email</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='128'>User successfully submits the form with all possible valid values for email</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for email</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='135'>User successfully submits the form with all possible valid values for email</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for email</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='143'>Submitting the form with a blank email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:49:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='150'>Submitting the form with a blank email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='158'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='165'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='172'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='179'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='186'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='193'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='200'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='207'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='214'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='222'>Submitting the form with a blank comments</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank comments</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:50:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='229'>Submitting the form with a blank comments</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank comments</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='236'>User resets the form after filling all the fields</a>
+<div class="">
+<span class="badge badge-default">User Registration.User resets the form after filling all the fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='243'>Verify the order of web elements</a>
+<div class="">
+<span class="badge badge-default">User Registration.Verify the order of web elements</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='248'>Verify the lable or place holder of web elements</a>
+<div class="">
+<span class="badge badge-default">User Registration.Verify the lable or place holder of web elements</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Test_006</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test_006</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='84'>Submitting the form with a blank Last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank Last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:49:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='91'>Submitting the form with a blank Last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank Last name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@Test_008</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test_008</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='114'>User successfully submits the form with all possible valid values for email</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for email</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='121'>User successfully submits the form with all possible valid values for email</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for email</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='128'>User successfully submits the form with all possible valid values for email</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for email</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='135'>User successfully submits the form with all possible valid values for email</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for email</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>14</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@EmailValidation</p>
+<p class="duration text-sm">15 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@EmailValidation</h4>
+<span status="pass" class='badge log pass-bg'>14 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='114'>User successfully submits the form with all possible valid values for email</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for email</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='121'>User successfully submits the form with all possible valid values for email</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for email</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='128'>User successfully submits the form with all possible valid values for email</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for email</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='135'>User successfully submits the form with all possible valid values for email</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for email</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='143'>Submitting the form with a blank email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:49:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='150'>Submitting the form with a blank email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='158'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='165'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='172'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='179'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='186'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='193'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='200'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='207'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:50:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='214'>Submitting the form with a invalid email id</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a invalid email id</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@Test_005</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test_005</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='62'>User successfully submits the form with all possible valid values for last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='69'>User successfully submits the form with all possible valid values for last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:49:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='76'>User successfully submits the form with all possible valid values for last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for last name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Test_001</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test_001</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:26 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User successfully submits the form with valid input</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with valid input</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@Test_002</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test_002</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>User successfully submits the form with all possible valid values for first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>User successfully submits the form with all possible valid values for first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>User successfully submits the form with all possible valid values for first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.User successfully submits the form with all possible valid values for first name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@Test_007</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test_007</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:49:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='99'>Submitting the form with invalid last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with invalid last name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:49:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='106'>Submitting the form with invalid last name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with invalid last name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Test_003</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test_003</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:48:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>Submitting the form with a blank first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank first name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:48:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>Submitting the form with a blank first name</a>
+<div class="">
+<span class="badge badge-default">User Registration.Submitting the form with a blank first name</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sep 20, 2023 23:48:26</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sep 20, 2023 23:50:23</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='77%'><b>27</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='22%'><b>8</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='94%'><b>136</b> steps passed</small></div>
+<div>
+<small data-tooltip='5%'><b>8</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"User Registration":116.479
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Test_004</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@OrderValidation</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Test_013</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@LableValidation</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Test_011</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@Test_010</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@LastNameValidation</td>
+<td>4</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>57.143%</td>
+</tr>
+<tr>
+<td>@Test_009</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@ResetButtonValidation</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Test_012</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@FisrtNameValidation</td>
+<td>4</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>57.143%</td>
+</tr>
+<tr>
+<td>@CommentsFieldValidation</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@Test_014</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@RT</td>
+<td>27</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>77.143%</td>
+</tr>
+<tr>
+<td>@Test_006</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@Test_008</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@EmailValidation</td>
+<td>14</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>93.333%</td>
+</tr>
+<tr>
+<td>@Test_005</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Test_001</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Test_002</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Test_007</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Test_003</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 27,
+failChild: 8,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 136,
+failGrandChild: 8,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
